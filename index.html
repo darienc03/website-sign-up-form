@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Website.com Sign Up</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1 id="title">Website.com Sign Up</h1>
@@ -14,7 +15,24 @@
                 <label>Enter Your Age (18+): <input id="age" type="number" min="18" max="99" required ></label>
                 <label>Enter a Username: <input id="username" type="text" required ></label>
                 <label>Enter a Password: <input id="password" type="password" pattern="[a-z0-5]{8,}" placeholder="A password of min 8 characters is required" required ></label>
+                <label>Would you like to be signed up to recieve our weekly newsletters? <input id="yes" type="radio" class="inline" checked>Yes <input id="no" type="radio" class="inline">No </label>
             </fieldset>
+            <fieldset>
+                <legend>Create Your Profile</legend>
+                <label>Upload a Profile Picture: <input id="picture" type="file"></label>
+                <label>Add a Bio: <textarea id="bio" rows="12" cols="30" placeholder="Enter your bio"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <label>How did you hear about us? <select id="reference">
+                    <option value="">(select one)</option>
+                    <option value="1">Newsletters</option>
+                    <option value="2">Youtube</option>
+                    <option value="3">Instagram</option>
+                    <option value="4">Word of Mouth</option>
+                    <option value="5">Other</option>
+                </select></label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
         </form>
     </body>
 </html>
